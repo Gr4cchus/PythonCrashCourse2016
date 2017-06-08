@@ -1,17 +1,4 @@
-class User():
-    """Model a user"""
-    def __init__(self, fname, lname):
-        """Initialize first and last name attributes."""
-        self.fname = fname
-        self.lname = lname
-
-    def describe_user(self):
-        """Print out user details"""
-        print("\nUser name is:", self.fname, self.lname)
-
-    def greet_user(self):
-        """Print out a greeting to the user."""
-        print("Hello", self.fname, self.lname, "it is great to see you!")
+from user import User
 
 
 class Admin(User):
@@ -35,8 +22,3 @@ class Privileges():
         print("\nList of administrative privileges: ")
         for privilege in self.privileges:
             print('-', privilege)
-
-
-admin0 = Admin('h', 'dawg')
-admin0.describe_user()
-admin0.privileges.show_privileges()  # be aware of the lowercase and upper case distinction.

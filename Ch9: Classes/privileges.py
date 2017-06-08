@@ -21,21 +21,17 @@ class Admin(User):
         Then initialize attributes specific to admin
         """
         super().__init__(fname, lname)
-        self.privileges = ['add', 'remove', 'chown', 'grant']
+        self.privileges = Privileges()
+
+
+class Privileges():
+    """Model Privileges"""
+    def __init__(self):
+        """Initialize attributes"""
+        self.privileges = ['grant', 'deny', 'ban', 'remove', 'rename']
 
     def show_privileges(self):
         """List the administrator privileges"""
         print("\nList of administrative privileges: ")
         for privilege in self.privileges:
             print('-', privilege)
-
-admin0 = Admin('h', 'dawg')
-admin0.describe_user()
-admin0.show_privileges()
-
-# user0 = User('john', 'doe')
-# user0.describe_user()
-# user0.greet_user()
-# user1 = User("Alice", 'greyjoy')
-# user1.describe_user()
-# user1.greet_user()

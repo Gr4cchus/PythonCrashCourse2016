@@ -36,23 +36,3 @@ class IceCreamStand(Restaurant):
         print("\nThe flavors are:")
         for flavor in self.flavors:
             print('-', flavor)
-
-ice_cream_stand0 = IceCreamStand("Culvers", "Ice Cream")
-ice_cream_stand0.describe_restaurant()
-ice_cream_stand0.show_flavors()
-# restaurant = Restaurant("The Outback", "Americanized Australian")   # instance
-# print(restaurant.restaurant_name)
-# print(restaurant.cuisine_type)
-# restaurant.describe_restaurant()
-# restaurant.open_restaurant()
-#
-# print(restaurant.number_served)
-# restaurant.number_served = 10
-# print(restaurant.number_served)
-#
-# restaurant.set_number_served(90)
-# print(restaurant.number_served)
-# restaurant.increment_number_served(110)
-# print(restaurant.number_served)
-
-
