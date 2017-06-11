@@ -1,0 +1,4 @@
+In Python you can manipulate files.
+In Python you can run limitless computations.
+In Python you can create objects.
+In Python you can create lists.
